@@ -3,7 +3,9 @@
 
 ## Install dependences
 
-```npm i```
+```
+npm i
+```
 
 Lunch project
 
