@@ -1,8 +1,13 @@
 # ec2-node-d
 
-npm i
 
-node app.js
+## Install dependences
+
+`npm i`
+
+Lunch project
+
+`node app.js`
 
 
 ### Simple script for deploy in EC2
