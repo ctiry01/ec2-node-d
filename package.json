@@ -6,14 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/ctiry01/nodetest.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ctiry01/nodetest/issues"
-  },
-  "homepage": "https://github.com/ctiry01/nodetest#readme"
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
