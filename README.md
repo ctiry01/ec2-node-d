@@ -11,7 +11,7 @@ node app.js
 #!/bin/bash
 apt-get update
 apt-get install -y nodejs npm
-git clone git@github.com:ctiry01/ec2-node-d.git
+git clone https://github.com/ctiry01/ec2-node-d.git
 "$HOME/application"
 cd "$HOME/application" || exit 0
 git checkout 99c6efa
