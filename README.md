@@ -7,9 +7,11 @@
 npm i
 ```
 
-Lunch project
+## Lunch project
 
-`node app.js`
+```
+node app.js
+```
 
 
 ### Simple script for deploy in EC2
