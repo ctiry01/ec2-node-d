@@ -14,7 +14,7 @@ apt-get install -y nodejs npm
 git clone https://github.com/ctiry01/ec2-node-d.git
 "$HOME/application"
 cd "$HOME/application" || exit 0
-git checkout 99c6efa
+git checkout master
 npm install
 
 cat <<EOT > /etc/rc.local
