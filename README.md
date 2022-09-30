@@ -5,7 +5,7 @@ npm i
 node app.js
 
 
-### simple script for deploy in EC2
+### Simple script for deploy in EC2
 
 ```
 #!/bin/bash
