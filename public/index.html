@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EC2 D</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 </head>
 <body>
 <h1>Welcome from EC2!</h1>
-<h3 id="ipAddress">Welcome from EC2!</h3>
-
+<h3 id='ipAdd'></h3>
 <script>
-    let ip = "-";
-
-    function getIPFromAmazon() {
-        fetch("https://checkip.amazonaws.com/").then(res => res.text()).then(data => ip = data)
-    }
-
-    getIPFromAmazon()
-
-    document.getElementById("ipAddress").innerHTML = ip
+    $.ajax({
+        url: "//api.ipify.org/?format=json",
+        dataType: 'JSON',
+    }).success(function(data) {
+        //document.getElementById("ipAdd").innerHTML = data.ip;
+        $("#ipAdd").html(data.ip);
+        console.log(data.ip);
+    }).error(function (jqXHR, textStatus, errorThrown) {
+        console.log(jqXHR);
+        console.log(textStatus);
+        console.log(errorThrown);
+    });
 </script>
 </body>
 </html>
