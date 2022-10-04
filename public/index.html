@@ -8,5 +8,18 @@
 </head>
 <body>
 <h1>Welcome from EC2!</h1>
+<h3 id="ipAddress">Welcome from EC2!</h3>
+
+<script>
+    let ip = "-";
+
+    function getIPFromAmazon() {
+        fetch("https://checkip.amazonaws.com/").then(res => res.text()).then(data => ip = data)
+    }
+
+    getIPFromAmazon()
+
+    document.getElementById("ipAddress").innerHTML = ip
+</script>
 </body>
 </html>
